@@ -1,13 +1,21 @@
 //Getting the elements by their ID's and Classes
 const qwerty = document.getElementById('qwerty');
 const pharase = document.getElementById('phrase');
-const button = document.getElementsByClassName('btn_reset');
-let playerGuesses;
+const button = document.querySelector('.btn__reset');
+let missed = 0;
 
-for(let i = 0; i < playerGuesses.length; i++) {
-    
+const randomPhrases = ['You Win Some, You Lose Some', 'Only The Strong Survie', 'Work Hard, Play Hard',
+'EveryBody Eats', 'You Wear The Crown'];
+
+function getRandomPhrasesArray() {
+
 }
 
-button.addEventListener('click', () => {
+// for(let i = 0; i < playerGuesses.length; i++) {
 
+// }
+
+button.addEventListener('click', () => {
+    console.log('clicked');
 });
+

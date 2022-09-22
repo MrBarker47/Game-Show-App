@@ -7,9 +7,28 @@ let missed = 0;
 const randomPhrases = ['You Win Some, You Lose Some', 'Only The Strong Survie', 'Work Hard, Play Hard',
 'EveryBody Eats', 'You Wear The Crown'];
 
+
+// Get a random phrases from the array that you created
 function getRandomPhrasesArray() {
 
 }
+
+getRandomPhrasesArray(pharase);
+
+
+
+function addPhraseToDisplay() {
+    
+}
+
+
+
+
+
+
+
+
+
 
 // for(let i = 0; i < playerGuesses.length; i++) {
 

@@ -10,15 +10,15 @@ const randomPhrases = ['You Win Some, You Lose Some', 'Only The Strong Survie', 
 
 // Get a random phrases from the array that you created
 function getRandomPhrasesArray() {
-
+ 
 }
 
 getRandomPhrasesArray(pharase);
 
 
-
+// Do stuff any arr that os passed in, and add to '#phrase ul'
 function addPhraseToDisplay() {
-    
+  
 }
 
 

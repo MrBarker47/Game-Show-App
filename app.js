@@ -19,10 +19,14 @@ function getRandomPhrasesArray(phrases) {
 
 // Do stuff any arr that os passed in, and add to '#phrase ul'
 function addPhraseToDisplay() {
-    const li = document.createElement('li');
-  for(let i = 0; i < li.length; i++) {
-  
+     for(let i = 0; i < li.length; i++) {
+        const li = document.createElement('li');
   }
+}
+
+
+function checkLetter() {
+
 }
 
 
@@ -31,11 +35,7 @@ function addPhraseToDisplay() {
 
 
 
-
-
-
-
-button.addEventListener('click', () => {
-    console.log('clicked');
-});
+// button.addEventListener('click', () => {
+//     console.log('clicked');
+// });
 

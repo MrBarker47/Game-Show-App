@@ -21,12 +21,8 @@ function getRandomPhrasesArray(phrases) {
 function addPhraseToDisplay() {
      for(let i = 0; i < li.length; i++) {
         const li = document.createElement('li');
+        phrase.append('li');
   }
-}
-
-
-function checkLetter() {
-
 }
 
 

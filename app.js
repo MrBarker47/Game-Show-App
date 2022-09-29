@@ -5,7 +5,7 @@ const button = document.querySelector('.btn__reset');
 let missed = 0;
 
 
-const phrases = ['You Win Some, You Lose Some', 'Only The Strong Survie', 'Work Hard, Play Hard',
+const phrases = ['You Win Some, You Lose Some', 'Only The Strong Survive', 'Work Hard, Play Hard',
 'EveryBody Eats', 'You Wear The Crown'];
 
 // Get a random phrases from the array that you created
@@ -17,15 +17,6 @@ function getRandomPhrasesArray(phrases) {
 
 
 
-// Do stuff any arr that os passed in, and add to '#phrase ul'
-function addPhraseToDisplay() {
-     for(let i = 0; i < li.length; i++) {
-        const li = document.createElement('li');
-        phrase.append('li');
-  }
-}
-
-
 
 
 
@@ -33,5 +24,7 @@ function addPhraseToDisplay() {
 
 // button.addEventListener('click', () => {
 //     console.log('clicked');
+// for(let i = 0; i < li.length; i++)
+
 // });
 

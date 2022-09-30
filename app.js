@@ -5,21 +5,15 @@ const button = document.querySelector('.btn__reset');
 let missed = 0;
 
 
-const phrases = ['You Win Some, You Lose Some', 'Only The Strong Survive', 'Work Hard, Play Hard',
+const phrases = ['Hello World', 'Only The Strong Survive', 'Work Hard, Play Hard',
 'EveryBody Eats', 'You Wear The Crown'];
 
 // Get a random phrases from the array that you created
-function getRandomPhrasesArray(phrases) {
-    const myWord = phrases.split(" ");
-    let word = myWord[1];
+function getRandomPhrasesArray() {
+    const newWord =  phrases.split('');
+    let word = newWord[1];
 }
-
-
-
-
-function addPhraseToDisplay() {
-    
-}
+console.log('newWord');
 
 
 

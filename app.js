@@ -11,9 +11,8 @@ const phrases = ['Hello World', 'Only The Strong Survive', 'Work Hard, Play Hard
 // Get a random phrases from the array that you created
 function getRandomPhrasesArray() {
     const newWord =  phrases.split('');
-    let word = newWord[1];
+    let word = phrases[0];
 }
-console.log('newWord');
 
 
 

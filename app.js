@@ -17,7 +17,9 @@ function getRandomPhrasesArray(phrases) {
 
 
 
-
+function addPhraseToDisplay() {
+    
+}
 
 
 

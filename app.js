@@ -9,12 +9,13 @@ const phrases = ['Hello World', 'Only The Strong Survive', 'Work Hard, Play Hard
 'EveryBody Eats', 'You Wear The Crown'];
 
 // Get a random phrases from the array that you created
-function getRandomPhrasesArray() {
-    const newWord =  phrases.split('');
+function getRandomPhrasesArray(phrases) {
+   let newWord =  phrase.split('');
     let word = phrases[0];
+    return phrases;
 }
 
-
+// const arr = getRandomPhrasesArray(phrases);
 
 
 // button.addEventListener('click', () => {

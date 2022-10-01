@@ -18,9 +18,27 @@ function getRandomPhrasesArray(phrases) {
 // const arr = getRandomPhrasesArray(phrases);
 
 
+function addPhraseToDisplay(phrases) {
+    const li = document.createElement('li');
+    for (let i = 0; i < li.length; i++) {
+     li.append('ul');
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
 // button.addEventListener('click', () => {
 //     console.log('clicked');
-// for(let i = 0; i < li.length; i++)
+
 
 // });
 

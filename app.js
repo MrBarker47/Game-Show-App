@@ -29,10 +29,7 @@ function addPhraseToDisplay(phrases) {
 const phraseArray = getRandomPhrasesArray(phrases);
 addPhraseToDisplay(phraseArray);
 
-function checkLetter(button) {
 
-}
- 
 
 
 

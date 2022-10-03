@@ -15,20 +15,13 @@ function getRandomPhrasesArray(phrases) {
     return phrases;
 }
 
-// const arr = getRandomPhrasesArray(phrases);
-
-
 function addPhraseToDisplay(phrases) {
     const li = document.createElement('li');
-    for (let i = 0; i < li.length; i++) {
+    for (let i = 0; i < phrases.length; i++) {
      li.append('ul');
     }
 
 }
-
-const phraseArray = getRandomPhrasesArray(phrases);
-addPhraseToDisplay(phraseArray);
-
 
 
 

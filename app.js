@@ -23,8 +23,9 @@ function addPhraseToDisplay(phrases) {
 
 }
 
-
-
+function checkLetter(button) {
+    
+}
 
 
 

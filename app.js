@@ -16,15 +16,15 @@ function getRandomPhrasesArray(phrases) {
 }
 
 function addPhraseToDisplay(phrases) {
-    const li = document.createElement('li');
     for (let i = 0; i < phrases.length; i++) {
-     li.append('ul');
+    const li = document.createElement('li');
+      li.append('ul');
     }
 
 }
 
 function checkLetter(button) {
-    
+
 }
 
 

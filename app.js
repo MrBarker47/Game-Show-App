@@ -27,8 +27,12 @@ function addPhraseToDisplay(phrases) {
 function checkLetter(button) {
     const storage = document.querySelectorAll('li');
     let match = null;
+
     for(let i = 0; i < li.length; i++) {
+      if (button == li ) {
         
+    }
+        return match;
     }
 }
 
@@ -42,9 +46,9 @@ function checkLetter(button) {
 
 
 
-// button.addEventListener('click', () => {
-//     console.log('clicked');
+button.addEventListener('click', () => {
+    console.log('clicked');
 
 
-// });
+});
 

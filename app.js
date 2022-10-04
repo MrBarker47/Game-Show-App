@@ -25,7 +25,11 @@ function addPhraseToDisplay(phrases) {
 }
 
 function checkLetter(button) {
-
+    const storage = document.querySelectorAll('li');
+    let match = null;
+    for(let i = 0; i < li.length; i++) {
+        
+    }
 }
 
 
@@ -33,12 +37,6 @@ function checkLetter(button) {
 
 
 
-
-
-
-// function checkLetter(button) {
-
-// }
 
 
 

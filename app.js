@@ -19,13 +19,24 @@ function addPhraseToDisplay(phrases) {
     for (let i = 0; i < phrases.length; i++) {
     const li = document.createElement('li');
       li.append('ul');
+      li.classList.add('letter')
     }
 
 }
 
-function checkLetter(button) {
 
-}
+
+
+
+
+
+
+
+
+
+// function checkLetter(button) {
+
+// }
 
 
 

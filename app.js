@@ -5,12 +5,13 @@ const button = document.querySelector('.btn__reset');
 let missed = 0;
 
 
-const phrases = ['Hello World', 'Only The Strong Survive', 'Work Hard, Play Hard',
+const phrases = ['Hello World', 'Only The Strong Survive', 'Work Hard Play Hard',
 'EveryBody Eats', 'You Wear The Crown'];
 
 // Get a random phrases from the array that you created
-function getRandomPhrasesArray(phrases) {
-   let newWord =  phrase.split('');
+function getRandomPhrasesArray(array) {
+const randomNumber = Math.floor(Math.random() * array.length);
+   let newWord =  array[randomNumber].split('');
     let word = phrases[0];
     return phrases;
 }
@@ -31,8 +32,7 @@ function checkLetter(button) {
     for(let i = 0; i < li.length; i++) {
       if (button == li ) {
         
-    }
-        return match;
+      }
     }
 }
 

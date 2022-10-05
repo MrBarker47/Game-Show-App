@@ -2,7 +2,10 @@
 const qwerty = document.getElementById('qwerty');
 const phrase = document.getElementById('phrase');
 const button = document.querySelector('.btn__reset');
+const div = document.getElementById('overlay');
+
 let missed = 0;
+
 
 
 const phrases = ['Hello World', 'Only The Strong Survive', 'Work Hard Play Hard',
@@ -16,9 +19,10 @@ const randomNumber = Math.floor(Math.random() * array.length);
     return phrases;
 }
 
-function addPhraseToDisplay(phrases) {
-    for (let i = 0; i < phrases.length; i++) {
+function addPhraseToDisplay(array) {
+    for (let i = 0; i < array.length; i++) {
     const li = document.createElement('li');
+      li.textContent('array[i]');
       li.append('ul');
       li.classList.add('letter')
     }
@@ -28,7 +32,6 @@ function addPhraseToDisplay(phrases) {
 function checkLetter(button) {
     const storage = document.querySelectorAll('li');
     let match = null;
-
     for(let i = 0; i < li.length; i++) {
       if (button == li ) {
         
@@ -48,6 +51,7 @@ function checkLetter(button) {
 
 button.addEventListener('click', () => {
     console.log('clicked');
+    overlay.style.display = 'none';
 
 
 });

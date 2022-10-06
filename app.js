@@ -3,7 +3,6 @@ const qwerty = document.getElementById('qwerty');
 const phrase = document.getElementById('phrase');
 const button = document.querySelector('.btn__reset');
 const div = document.getElementById('overlay');
-
 let missed = 0;
 
 
@@ -22,12 +21,22 @@ const randomNumber = Math.floor(Math.random() * array.length);
 function addPhraseToDisplay(array) {
     for (let i = 0; i < array.length; i++) {
     const li = document.createElement('li');
-      li.textContent('array[i]');
-      li.append('ul');
-      li.classList.add('letter')
+      li.textContent = 'array[0]';
+      
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
 
 function checkLetter(button) {
     const storage = document.querySelectorAll('li');

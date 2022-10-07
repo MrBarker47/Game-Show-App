@@ -37,26 +37,15 @@ function checkLetter(button) {
     const storage = document.querySelectorAll('li');
     let match = null;
     for(let i = 0; i < li.length; i++) {
-      if (button == li ) {
-        
-      }
+    
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 button.addEventListener('click', () => {
     console.log('clicked');
     overlay.style.display = 'none';
-
+    getRandomPhrasesArray(phrases);
+  console.log(phrase);
 
 });
 

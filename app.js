@@ -2,7 +2,9 @@
 const qwerty = document.getElementById('qwerty');
 const phrase = document.getElementById('phrase');
 const button = document.querySelector('.btn__reset');
-const div = document.getElementById('overlay');
+const divOne = document.getElementById('overlay');
+const divTwo = document.getElementById('phrase');
+
 let missed = 0;
 
 
@@ -22,7 +24,9 @@ function addPhraseToDisplay(array) {
     for (let i = 0; i < array.length; i++) {
     const li = document.createElement('li');
       li.textContent = 'array[i]';
-      
+      li.classList.add('space');
+      li.append('ul');
+      break;
     }
 
 }

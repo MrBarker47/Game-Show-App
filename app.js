@@ -21,20 +21,11 @@ const randomNumber = Math.floor(Math.random() * array.length);
 function addPhraseToDisplay(array) {
     for (let i = 0; i < array.length; i++) {
     const li = document.createElement('li');
-      li.textContent = 'array[0]';
+      li.textContent = 'array[i]';
       
     }
 
 }
-
-
-
-
-
-
-
-
-
 
 
 

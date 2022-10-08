@@ -31,8 +31,6 @@ function addPhraseToDisplay(array) {
 
 }
 
-
-
 function checkLetter(button) {
     const storage = document.querySelectorAll('li');
     let match = null;
@@ -45,7 +43,5 @@ button.addEventListener('click', () => {
     console.log('clicked');
     overlay.style.display = 'none';
     getRandomPhrasesArray(phrases);
-  console.log(phrase);
-
-});
+  });
 

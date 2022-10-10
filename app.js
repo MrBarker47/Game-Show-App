@@ -24,19 +24,11 @@ function addPhraseToDisplay(array) {
     for (let i = 0; i < array.length; i++) {
     const li = document.createElement('li');
       li.textContent = 'array[i]';
-      li.classList.add('space');
+      li.classList.add('letter');
       li.append('ul');
       break;
     }
 
-}
-
-function checkLetter(button) {
-    const storage = document.querySelectorAll('li');
-    let match = null;
-    for(let i = 0; i < li.length; i++) {
-    
-    }
 }
 
 button.addEventListener('click', () => {

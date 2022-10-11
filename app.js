@@ -3,8 +3,6 @@ const qwerty = document.getElementById('qwerty');
 const phrase = document.getElementById('phrase');
 const button = document.querySelector('.btn__reset');
 const divOne = document.getElementById('overlay');
-const divTwo = document.getElementById('phrase');
-
 let missed = 0;
 
 
@@ -30,6 +28,10 @@ function addPhraseToDisplay(array) {
     }
 
 }
+
+
+
+
 
 button.addEventListener('click', () => {
     console.log('clicked');

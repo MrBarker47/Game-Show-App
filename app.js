@@ -13,13 +13,15 @@ const phrases = ['hello world', 'only the strong survive', 'work hard play hard'
 function getRandomPhrasesArray(array) {
   const randomNumber = Math.floor(Math.random() * array.length);
     let newWord = array[randomNumber].split('');
-     return array;
+     return array[randomNumber];
 }
 
 function addPhraseToDisplay(array) {
   for (let i = 0; i < array.length; i++) {
     const li = document.createElement('li');
-
+     li.textContent = 'array[i]';
+     li.classList.add('letter');
+     
    }
 }
 

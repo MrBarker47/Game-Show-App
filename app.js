@@ -14,7 +14,7 @@ const phrases = ['hello world', 'only the strong survive', 'work hard play hard'
 function getRandomPhrasesArray(array) {
   const randomNumber = Math.floor(Math.random() * array.length);
     let newWord = array[randomNumber].split('');
-     return array[randomNumber].split('');
+     return array;
 }
 
 function addPhraseToDisplay(array) {

@@ -19,10 +19,8 @@ function getRandomPhrasesArray(array) {
 function addPhraseToDisplay(array) {
   for (let i = 0; i < array.length; i++) {
     const li = document.createElement('li');
-    li.textContent = 'array[i]';
-    li.className('letter');
-    break;
-  }
+
+   }
 }
 
 button.addEventListener('click', () => {

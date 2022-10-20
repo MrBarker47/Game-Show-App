@@ -5,6 +5,8 @@ const button = document.querySelector('.btn__reset');
 const divOne = document.getElementById('overlay');
 const newDiv = phrase.firstElementChild;
 let missed = 0;
+let match = 0;
+
 
 
 // Get a random phrases from the array that you created
@@ -25,6 +27,13 @@ function addPhraseToDisplay(array) {
        newDiv.appendChild(li);
   
    }
+}
+
+function checkLetter(button) {
+  const list = document.getElementsByTagName('li');
+  for (let i = 0; i < list.length; i++) {
+
+  }
 }
 
 button.addEventListener('click', () => {

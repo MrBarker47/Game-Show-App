@@ -10,7 +10,7 @@ let match = 0;
 
 
 // Get a random phrases from the array that you created
-const phrases = ['hello world', 'only the strong survive', 'work hard play hard',
+const phrases = ['hello world', 'only the strong survive', 'Kobe Bryant',
 'everybody eats', 'you wear the crown'];
 
 function getRandomPhrasesArray(array) {
@@ -24,9 +24,15 @@ function addPhraseToDisplay(array) {
     const li = document.createElement('li');
      li.textContent = array[i];
       li.classList.add('letter');
+      li.classList.add('space');
        newDiv.appendChild(li);
-  
+      if ('letter' > 'space') {
+        alert('letter');
+      } else {
+        console.log('space');
+      }
    }
+
 }
 
 function checkLetter(button) {

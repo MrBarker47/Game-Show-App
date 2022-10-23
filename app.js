@@ -26,24 +26,23 @@ function addPhraseToDisplay(array) {
       li.classList.add('letter');
       li.classList.add('space');
        newDiv.appendChild(li);
-      if ('letter' < 'space') {
-        console.log('');
+      if ('letter' > 'space') {
+        console.log('letter');
       } else {
-        console.log('');
+        console.log('space');
       }
    }
 
 }
 
 function checkLetter(button) {
-  const list = document.getElementsByTagName('li');
+  const list = document.getElementsByTagName(li);
   for (let i = 0; i < list.length; i++) {
-    if (button > li) {
-      console.log(li.classList.add('show'));
+    if (button == li ) {
+      console.log();
     } else {
-      console.log('');
+      console.log();
     }
-    return match;
   }
 }
 

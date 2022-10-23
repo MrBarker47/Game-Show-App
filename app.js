@@ -38,9 +38,12 @@ function addPhraseToDisplay(array) {
 function checkLetter(button) {
   const list = document.getElementsByTagName('li');
   for (let i = 0; i < list.length; i++) {
-    if ('') {
-
+    if (button > li) {
+      console.log(li.classList.add('show'));
+    } else {
+      console.log('');
     }
+    return match;
   }
 }
 
@@ -49,6 +52,7 @@ button.addEventListener('click', () => {
     getRandomPhrasesArray(phrases);
   });
 
+  
 qwerty.addEventListener('click', () => {
 
 });

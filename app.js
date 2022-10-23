@@ -47,12 +47,19 @@ function checkLetter(button) {
   }
 }
 
+function checkWin() {
+  const letter = document.getElementsByTagName(li);
+  const show = document.getElementsByTagName(li);
+}
+
+
+
 button.addEventListener('click', () => {
     overlay.style.display = 'none';
     getRandomPhrasesArray(phrases);
   });
 
-  
+
 qwerty.addEventListener('click', () => {
 
 });

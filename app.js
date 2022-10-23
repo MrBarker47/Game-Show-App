@@ -26,16 +26,16 @@ function addPhraseToDisplay(array) {
       li.classList.add('letter');
       li.classList.add('space');
        newDiv.appendChild(li);
-      if ('letter' > 'space') {
-        console.log('letter');
-      } else {
-        console.log('space');
-      }
-   }
+    if('letter' > 'space') {
+        console.log('')
+     } else {
+      console.log('')
+     }
+    }
+  }
 
-}
 
-function checkLetter(button) {
+function checkLetter(button) { 
   const list = document.getElementsByTagName(li);
   for (let i = 0; i < list.length; i++) {
     if (button > li ) {

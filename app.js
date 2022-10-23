@@ -27,9 +27,9 @@ function addPhraseToDisplay(array) {
       li.classList.add('space');
        newDiv.appendChild(li);
     if('letter' > 'space') {
-        console.log('')
-     } else {
-      console.log('')
+        console.log('letter');
+     } else { 
+      console.log('space');
      }
     }
   }

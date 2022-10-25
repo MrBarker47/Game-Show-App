@@ -35,7 +35,9 @@ function addPhraseToDisplay(array) {
 function checkLetter(button) { 
   const list = document.getElementsByTagName(li);
   for (let i = 0; i < list.length; i++) {
-
+     if(button === list) {
+      
+     }
   }
 }
 
@@ -54,5 +56,5 @@ button.addEventListener('click', () => {
 
 
 qwerty.addEventListener('click', () => {
-
+  
 });

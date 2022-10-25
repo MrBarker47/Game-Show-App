@@ -32,16 +32,12 @@ function addPhraseToDisplay(array) {
   }
 
 
-// function checkLetter(button) { 
-//   const list = document.getElementsByTagName(li);
-//   for (let i = 0; i < list.length; i++) {
-//     if (button > li ) {
-//       console.log();
-//     } else {
-//       console.log();
-//     }
-//   }
-// }
+function checkLetter(button) { 
+  const list = document.getElementsByTagName(li);
+  for (let i = 0; i < list.length; i++) {
+
+  }
+}
 
 function checkWin() {
   const letter = document.getElementsByTagName(li);

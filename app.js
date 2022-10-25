@@ -25,7 +25,10 @@ function addPhraseToDisplay(array) {
      li.textContent = array[i];
       li.classList.add('letter');
        newDiv.appendChild(li);
-    }
+       if (array[i] === " ") {
+        li.classList.add('letter');
+       } 
+     }
   }
 
 

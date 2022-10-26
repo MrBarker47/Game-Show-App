@@ -5,7 +5,7 @@ const button = document.querySelector('.btn__reset');
 const divOne = document.getElementById('overlay');
 const newDiv = phrase.firstElementChild;
 let missed = 0;
-let match = 0;
+let match = null;
 
 
 
@@ -33,17 +33,18 @@ function addPhraseToDisplay(array) {
 
 
 function checkLetter(button) { 
-  const list = document.getElementsByTagName(li);
+  const list = document.getElementsByTagName('li');
   for (let i = 0; i < list.length; i++) {
-     if(button > list) {
+     if(button === list) {
       li.classList.add('show');
+      return match;
      }
   }
 }
 
 function checkWin() {
-  const letter = document.getElementsByTagName(li);
-  const show = document.getElementsByTagName(li);
+  const letter = document.getElementsByTagName('li');
+  const show = document.getElementsByTagName('li');
 
 }
 
@@ -56,5 +57,5 @@ button.addEventListener('click', () => {
 
 
 qwerty.addEventListener('click', () => {
-  
+  classList.add('class');
 });

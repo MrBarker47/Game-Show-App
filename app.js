@@ -35,7 +35,7 @@ function addPhraseToDisplay(array) {
 function checkLetter(button) { 
   const list = document.getElementsByTagName('li');
      for(let i =0; i < list.length; i++) {
-      if (button === list) {
+      if (button || list) {
         li.classList.add('show');
       }
       return match;

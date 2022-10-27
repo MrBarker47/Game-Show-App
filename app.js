@@ -36,17 +36,11 @@ function checkLetter(button) {
   const list = document.getElementsByTagName('li');
      for(let i =0; i < list.length; i++) {
       if (button === list) {
-          
+        li.classList.add('show');
       }
+      return match;
     }
 }
-
-function checkWin() {
-  const letter = document.getElementsByTagName('li');
-  const show = document.getElementsByTagName('li');
-
-}
-
 
 
 button.addEventListener('click', () => {

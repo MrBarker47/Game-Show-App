@@ -25,7 +25,7 @@ function addPhraseToDisplay(array) {
      li.textContent = array[i];
       li.classList.add('letter');
        newDiv.appendChild(li);
-       if (array[i] === " ") {
+       if(array[i] === "  " ) {
         li.classList.add('letter');
        } 
      }
@@ -34,12 +34,11 @@ function addPhraseToDisplay(array) {
 
 function checkLetter(button) { 
   const list = document.getElementsByTagName('li');
-  for (let i = 0; i < list.length; i++) {
-     if(button === list) {
-      li.classList.add('show');
-      return match;
-     }
-  }
+     for(let i =0; i < list.length; i++) {
+      if (button === list) {
+          
+      }
+    }
 }
 
 function checkWin() {
@@ -57,5 +56,5 @@ button.addEventListener('click', () => {
 
 
 qwerty.addEventListener('click', () => {
-  classList.add('class');
+   
 });

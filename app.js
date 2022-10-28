@@ -55,6 +55,7 @@ button.addEventListener('click', () => {
 qwerty.addEventListener('click', () => {
    if (button === " ") {
     button.classList.add('chosen');
+    let press = checkLetter(button);
    } 
    console.log(qwerty);
 });

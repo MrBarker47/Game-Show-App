@@ -23,23 +23,18 @@ function addPhraseToDisplay(array) {
   for (let i = 0; i < array.length; i++) {
     const li = document.createElement('li');
      li.textContent = array[i];
-      li.classList.add('letter');
        newDiv.appendChild(li);
-       if(array[i] === "  " ) {
+       if(array[i] === " " ) {
+        li.classList.add('space');
+       } else {
         li.classList.add('letter');
-       } 
+       }
      }
   }
 
 
 function checkLetter(button) { 
-  const list = document.getElementsByTagName('li');
-     for(let i =0; i < list.length; i++) {
-      if (button || list) {
-        li.classList.add('show');
-      }
-      return match;
-    }
+
 }
 
 

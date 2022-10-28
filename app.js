@@ -23,7 +23,7 @@ function addPhraseToDisplay(array) {
   for (let i = 0; i < array.length; i++) {
     const li = document.createElement('li');
      li.textContent = array[i];
-       newDiv.appendChild(li);
+        newDiv.appendChild(li);
        if(array[i] === " " ) {
         li.classList.add('space');
        } else {
@@ -34,7 +34,10 @@ function addPhraseToDisplay(array) {
 
 
 function checkLetter(button) { 
-
+  const list = document.getElementsByTagName(li);
+  for (let i = 0; i < list.length; i++) {
+    
+  }
 }
 
 

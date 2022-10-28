@@ -53,5 +53,7 @@ button.addEventListener('click', () => {
 
 
 qwerty.addEventListener('click', () => {
-   
+   if (button === "") {
+    button.classList.add('chosen');
+   }
 });

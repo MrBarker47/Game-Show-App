@@ -38,6 +38,7 @@ function checkLetter(button) {
   const list = phraseUl.children;
   console.log(list);
   for (let i = 0; i < list.length; i++) {
+    const li = list[i];
     if(button === li) {
       li.classList.add('show');
       match = true;

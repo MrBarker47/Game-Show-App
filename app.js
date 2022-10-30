@@ -33,7 +33,6 @@ function addPhraseToDisplay(array) {
      }
   }
 
-
 function checkLetter(button) { 
   const list = phraseUl.children;
   console.log(list);

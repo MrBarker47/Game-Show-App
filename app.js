@@ -1,6 +1,7 @@
 //Getting the elements by their ID's and Classes
 const qwerty = document.getElementById('qwerty');
 const phrase = document.getElementById('phrase');
+const phraseUl = phrase.firstElementChild;
 const button = document.querySelector('.btn__reset');
 const divOne = document.getElementById('overlay');
 const newDiv = phrase.firstElementChild;
@@ -34,12 +35,14 @@ function addPhraseToDisplay(array) {
 
 
 function checkLetter(button) { 
-  const list = document.getElementsByTagName(li);
+  const list = phraseUl.children;
+  console.log(list);
   for (let i = 0; i < list.length; i++) {
     if(button === li) {
       li.classList.add('show');
+      match = true;
     } else {
-      match = button;
+      match = false;
     }
     return match;
   }
@@ -52,12 +55,14 @@ button.addEventListener('click', () => {
   });
 
 
-qwerty.addEventListener('click', () => {
-   if (button === " ") {
-    button.classList.add('chosen');
-    let checkLetter = function() {
+qwerty.addEventListener('click', (e) => {
+   const button = e.target;
 
-    }
-   } 
-   console.log(checkLetter);
+   if(button.tagName === 'BUTTON') {
+      button.className = 'chosen';
+      button.disabled = true;
+     const buttonText = button.innerHTML;
+     const matchResults = checkLetter(buttonText)
+     console.log(matchResults);
+   }
 });

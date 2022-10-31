@@ -47,6 +47,10 @@ function checkLetter(button) {
   }
 }
 
+function checkWin() {
+  
+}
+
 
 button.addEventListener('click', () => {
     overlay.style.display = 'none';
@@ -60,8 +64,6 @@ qwerty.addEventListener('click', (e) => {
       button.className = 'chosen';
       button.disabled = true;
       const buttonText = button.innerHTML;
-     const matchResults = checkLetter(buttonText) 
-      console.log(matchResults)
-     
-  }
+      const matchResults = checkLetter(buttonText) 
+    }
 });

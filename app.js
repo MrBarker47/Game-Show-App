@@ -5,6 +5,7 @@ const phraseUl = phrase.firstElementChild;
 const button = document.querySelector('.btn__reset');
 const divOne = document.getElementById('overlay');
 const newDiv = phrase.firstElementChild;
+const removeHeart = document.getElementsByClassName('tries');
 let missed = 0;
 let match = null;
 

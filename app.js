@@ -35,7 +35,6 @@ function addPhraseToDisplay(array) {
   
 function checkLetter(button) { 
   const list = phraseUl.children;
-  // console.log(list);
   for (let i = 0; i < list.length; i++) {
     const li = list[i];
     if(button === li.innerText) {
@@ -56,13 +55,13 @@ button.addEventListener('click', () => {
 
 
 qwerty.addEventListener('click', (e) => {
-   const button = e.target;
-
-   if(button.tagName === 'BUTTON') {
+  const button = e.target;
+  if (button.tagName === 'BUTTON') {
       button.className = 'chosen';
       button.disabled = true;
-     const buttonText = button.innerHTML;
-     const matchResults = checkLetter(buttonText)
-     console.log(buttonText);
-   }
+      const buttonText = button.innerHTML;
+     const matchResults = checkLetter(buttonText) 
+      console.log(matchResults)
+     
+  }
 });

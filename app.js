@@ -36,9 +36,10 @@ function addPhraseToDisplay(array) {
   
 function checkLetter(button) { 
   const list = phraseUl.children;
+  console.log(checkLetter);
   for (let i = 0; i < list.length; i++) {
     const li = list[i];
-    if(button === li.innerHTML) {
+    if(button === li.innerText) {
       li.classList.add('show');
       match = true;
     } else {
@@ -46,10 +47,11 @@ function checkLetter(button) {
     }
     return match;
   }
+
 }
 
 function checkWin() {
-  
+ 
 }
 
 
@@ -64,10 +66,8 @@ qwerty.addEventListener('click', (e) => {
   if (button.tagName === 'BUTTON') {
       button.className = 'chosen';
       button.disabled = true;
-
       const buttonText = button.innerHTML;
-      const matchResults = checkLetter(buttonText);
-     console.log(button);
+       const matchResults = checkLetter(buttonText);
       
     }
 });

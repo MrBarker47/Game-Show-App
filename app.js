@@ -47,11 +47,10 @@ function checkLetter(button) {
     }
     return match;
   }
-
 }
 
 function checkWin() {
- 
+  
 }
 
 

@@ -39,7 +39,7 @@ function checkLetter(button) {
   console.log(checkLetter);
   for (let i = 0; i < list.length; i++) {
     const li = list[i];
-    if(button === li.innerText) {
+    if(button === li.innerHTML) {
       li.classList.add('show');
       match = true;
     } else {
@@ -65,8 +65,9 @@ qwerty.addEventListener('click', (e) => {
   if (button.tagName === 'BUTTON') {
       button.className = 'chosen';
       button.disabled = true;
-      const buttonText = button.innerHTML;
+       const buttonText = button.innerHTML;
        const matchResults = checkLetter(buttonText);
-      
+       checkLetter(buttonText) = false;
+      removeHeart.appendChild('li');
     }
 });

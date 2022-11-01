@@ -4,7 +4,7 @@ const phrase = document.getElementById('phrase');
 const phraseUl = phrase.firstElementChild;
 const button = document.querySelector('.btn__reset');
 const divOne = document.getElementById('overlay');
-const removeHeart = document.getElementsByClassName('tries');
+const removeHeart = document.getElementById('scoredboard');
 const newDiv = phrase.firstElementChild;
 let missed = 0;
 let match = null;
@@ -37,7 +37,7 @@ function addPhraseToDisplay(array) {
 function checkLetter(button) { 
   const list = phraseUl.children;
   for (let i = 0; i < list.length; i++) {
-    const liist = list[i];
+    const li = list[i];
     if(button === li.innerHTML) {
       li.classList.add('show');
       match = true;
@@ -64,6 +64,7 @@ qwerty.addEventListener('click', (e) => {
   if (button.tagName === 'BUTTON') {
       button.className = 'chosen';
       button.disabled = true;
+
       const buttonText = button.innerHTML;
       const matchResults = checkLetter(buttonText);
      console.log(button);

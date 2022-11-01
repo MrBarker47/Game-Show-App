@@ -4,8 +4,8 @@ const phrase = document.getElementById('phrase');
 const phraseUl = phrase.firstElementChild;
 const button = document.querySelector('.btn__reset');
 const divOne = document.getElementById('overlay');
-const removeHeart = document.getElementById('scoredboard');
 const newDiv = phrase.firstElementChild;
+const removeHeart = document.getElementById('scoreboard');
 let missed = 0;
 let match = null;
 
@@ -67,6 +67,6 @@ qwerty.addEventListener('click', (e) => {
       button.disabled = true;
        const buttonText = button.innerHTML;
        const matchResults = checkLetter(buttonText);
-       removeHeart.removeChild('ul');
+       this.removeHeart++;
     }
 });

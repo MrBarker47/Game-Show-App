@@ -67,6 +67,6 @@ qwerty.addEventListener('click', (e) => {
       button.disabled = true;
        const buttonText = button.innerHTML;
        const matchResults = checkLetter(buttonText);
-       removeHeart.removeChild('li');
+       removeHeart.removeChild('ul');
     }
 });

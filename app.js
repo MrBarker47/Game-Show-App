@@ -4,8 +4,8 @@ const phrase = document.getElementById('phrase');
 const phraseUl = phrase.firstElementChild;
 const button = document.querySelector('.btn__reset');
 const divOne = document.getElementById('overlay');
-const newDiv = phrase.firstElementChild;
 const removeHeart = document.getElementsByClassName('tries');
+const newDiv = phrase.firstElementChild;
 let missed = 0;
 let match = null;
 
@@ -37,7 +37,7 @@ function addPhraseToDisplay(array) {
 function checkLetter(button) { 
   const list = phraseUl.children;
   for (let i = 0; i < list.length; i++) {
-    const li = list[i];
+    const liist = list[i];
     if(button === li.innerHTML) {
       li.classList.add('show');
       match = true;
@@ -66,5 +66,7 @@ qwerty.addEventListener('click', (e) => {
       button.disabled = true;
       const buttonText = button.innerHTML;
       const matchResults = checkLetter(buttonText);
+     console.log(button);
+      
     }
 });

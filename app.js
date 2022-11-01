@@ -65,6 +65,6 @@ qwerty.addEventListener('click', (e) => {
       button.className = 'chosen';
       button.disabled = true;
       const buttonText = button.innerHTML;
-      const matchResults = checkLetter(buttonText)
+      const matchResults = checkLetter(buttonText);
     }
 });

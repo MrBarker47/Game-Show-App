@@ -45,8 +45,9 @@ function checkLetter(button) {
     } else {
       match = false;
     }
-    return match;
   }
+    return match;
+  
 }
 
 function checkWin() {
@@ -67,6 +68,8 @@ qwerty.addEventListener('click', (e) => {
       button.disabled = true;
        const buttonText = button.innerHTML;
        const matchResults = checkLetter(buttonText);
+
+  }
        this.removeHeart++;
-    }
+    
 });

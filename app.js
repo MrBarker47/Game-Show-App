@@ -70,8 +70,10 @@ qwerty.addEventListener('click', (e) => {
        const buttonText = button.innerHTML;
        const matchResults = checkLetter(buttonText);
 
-  } else if  (checkLetter == null)  {
-      
+  } else if  (checkLetter === null)  {
+      removeHeart.remove();
+      const lostHeart = missed++;
+
   }
     
 });

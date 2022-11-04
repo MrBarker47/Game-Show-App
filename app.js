@@ -5,8 +5,8 @@ const phraseUl = phrase.firstElementChild;
 const button = document.querySelector('.btn__reset');
 const divOne = document.getElementById('overlay');
 const newDiv = phrase.firstElementChild;
-const removeHeart = document.querySelectorAll('.tries img');
-let missed = 0;
+const removeHeart = document.querySelectorAll(' .tries img');
+let missed = null;
 let match = null;
 
 
@@ -70,10 +70,8 @@ qwerty.addEventListener('click', (e) => {
        const matchResults = checkLetter(buttonText);
        if (matchResults === false) {
         missed++;
-        removeHeart[missed - 1].src = "images/lostHeart.png"; 
-        }
-      
-    
-      
+        removeHeart[missed -1].src = 'images/lostHeart.png';
+        console.log(removeHeart);
+     }
    }   
 });

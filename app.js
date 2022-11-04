@@ -70,7 +70,7 @@ qwerty.addEventListener('click', (e) => {
        const matchResults = checkLetter(buttonText);
        if (matchResults === false) {
         missed++;
-        removeHeart[missed -1].src = 'images/lostHeart.png';
+        removeHeart[missed - 1].src = 'images/lostHeart.png';
         console.log(removeHeart);
      }
    }   

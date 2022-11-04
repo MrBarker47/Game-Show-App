@@ -68,11 +68,12 @@ qwerty.addEventListener('click', (e) => {
       button.disabled = true;
        const buttonText = button.innerHTML;
        const matchResults = checkLetter(buttonText);
-       if (matchResults === false){
+       if (matchResults === false) {
         missed++;
-        removeHeart[missed - 1].src = 'images/lostHeart.png'
-    }  
+        removeHeart[missed - 1].src = "images/lostHeart.png"; 
+        }
+      
     
-   }
-    
+      
+   }   
 });

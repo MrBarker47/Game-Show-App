@@ -36,15 +36,13 @@ function addPhraseToDisplay(array) {
   
 function checkLetter(button) { 
   const list = phraseUl.children;
-  console.log(checkLetter);
+  let match = false;
   for (let i = 0; i < list.length; i++) {
     const li = list[i];
     if(button === li.innerHTML) {
       li.classList.add('show');
       match = true;
-    } else {
-      match = false;
-    }
+    } 
   }
     return match;
   
@@ -71,7 +69,7 @@ qwerty.addEventListener('click', (e) => {
        if (matchResults === false) {
         missed++;
         removeHeart[missed - 1].src = 'images/lostHeart.png';
-        console.log(removeHeart);
+      
      }
    }   
 });

@@ -49,7 +49,12 @@ function checkLetter(button) {
 }
 
 function checkWin() {
-  
+  const letter = document.getElementsByClassName('letter');
+  const show = document.getElementsByClassName('show');
+   if (letter.length === show.length ) {
+
+   }
+
 }
 
 

@@ -53,7 +53,12 @@ function checkWin() {
   const show = document.getElementsByClassName('show');
    if (letter.length === show.length ) {
       overlay.start.add('win');
-
+      overlay.start.innerHTML = 'You Won!';
+      overlay.style.display = flex;
+    if (missed > 4 ) {
+      overlay.lose.add('')
+      
+    }
       
    }
 

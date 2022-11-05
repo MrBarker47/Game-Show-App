@@ -134,9 +134,9 @@ button {
   border-radius: 5px;
 }
 
-/* .title {
+.title {
   color: #FFF;
-} */
+}
 
 .start {
   background-color: var(--color-start);

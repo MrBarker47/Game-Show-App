@@ -56,10 +56,12 @@ function checkWin() {
       overlay.start.innerHTML = 'You Won!';
       overlay.style.display = flex;
     if (missed > 4 ) {
-      overlay.lose.add('')
-      
+      overlay.lose.add('lose')
+      overlay.lose.innerHTML = 'You Lose';
+      overlay.style.display = flex;
     }
-      
+
+    return checkWin;  
    }
 
 }

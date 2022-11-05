@@ -52,19 +52,19 @@ function checkWin() {
   const letter = document.getElementsByClassName('letter');
   const show = document.getElementsByClassName('show');
    if (letter.length === show.length ) {
-      overlay.start.add('win');
-      overlay.start.innerHTML = 'You Won!';
-      overlay.style.display = flex;
-    if (missed > 4 ) {
-      overlay.lose.add('lose')
-      overlay.lose.innerHTML = 'You Lose';
-      overlay.style.display = flex;
-    }
-
-    return checkWin;  
+      overlay.classList.add('win');
+      overlay.innerHTML = 'You Won!';
+      overlay.style.display = 'flex';
+   } else if(missed > 4) {
+      overlay.classList.add('lose')
+      overlay.innerHTML = 'You Lost';
+      overlay.style.display = 'flex';
+   
+  
+     }
    }
 
-}
+  
 
 
 button.addEventListener('click', () => {
@@ -85,5 +85,6 @@ qwerty.addEventListener('click', (e) => {
         removeHeart[missed - 1].src = 'images/lostHeart.png';
       
      }
+     return checkWin();  
    }   
 });

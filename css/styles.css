@@ -53,6 +53,7 @@ button {
   -webkit-transition: var(--transition);
   -o-transition: var(--transition);
   transition: var(--transition);
+  margin: 0.7px;
 }
 
 .main-container {
@@ -82,7 +83,7 @@ button {
   height: 65px;
   width: 65px;
   padding: 20px 1px 0 1px;
-  margin-right: 1px;
+  margin-right: 0.7px;
   margin-top: 2px;
   color: transparent;
   background: var(--color-neutral-light);
